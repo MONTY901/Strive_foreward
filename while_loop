@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) {
+        // Your Code Here
+         Scanner myObj = new Scanner(System.in);
+         int x = myObj.nextInt();
+        int n = 10;
+        while(n>=1){
+            System.out.print(n*x+" ");
+            n--;
+        }
+    }
+}
