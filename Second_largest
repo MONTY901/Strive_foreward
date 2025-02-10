@@ -1,0 +1,22 @@
+class Solution {
+    public int getSecondLargest(int[] arr) {
+        // Code Here
+        if(arr.length <2){
+            return -1;
+        }
+        int firstlargest =arr[0];
+        int secondlargest = -1;
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]>firstlargest){
+                secondlargest = firstlargest;
+                firstlargest = arr[i];
+                
+            }
+            else if(arr[i]<firstlargest && arr[i]>secondlargest){
+                secondlargest = arr[i];
+            }
+          
+        }
+        return secondlargest;
+    }
+}
